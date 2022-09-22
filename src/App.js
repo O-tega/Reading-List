@@ -3,6 +3,7 @@ import React, {
 } from "react";
 import Booklist from "./components/Booklist";
 import Navbar from "./components/Navbar";
+import ThemeToggle from "./components/ThemeToggle";
 import ThemeContextProvider from "./contexts/ThemeContext";
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
 					<ThemeContextProvider>
 						<Navbar />
 						<Booklist />
+            <ThemeToggle />
 					</ThemeContextProvider>
 				</div>
 			</div>

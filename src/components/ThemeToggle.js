@@ -1,0 +1,19 @@
+import React, { Component } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
+
+class ThemeToggle extends Component {
+    static contextType = ThemeContext
+	state = {};
+
+    render() {
+        const {toogleTheme} = this.context
+        return (
+            <div className="flex justify-center py-10 ">
+                <button onClick={toogleTheme} className=" rounded-lg shadow-lg bg-slate-400 text-white font-medium px-4 py-1">Toogle</button>
+            </div>
+            
+            )
+    }
+}
+
+export default ThemeToggle;
