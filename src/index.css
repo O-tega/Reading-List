@@ -11,7 +11,7 @@
 
 @layer components{
     .title{
-        @apply py-4 mt-4 rounded
+        @apply py-4 mt-4 rounded-lg
     }
     .nav{
         @apply px-3
