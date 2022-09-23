@@ -1,10 +1,15 @@
 import React from "react";
+import SongList from "./components/hooksComponents/SongList";
 
 
 const Hooks =()=>{
 
     return(
-        <div> this is the hooks page</div>
+
+        <div>
+            <SongList/>
+        </div>
+
     )
 }
 

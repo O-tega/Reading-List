@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { ThemeContext } from "../contexts/ThemeContext";
-import {Link} from 'react-router-dom'
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 class ThemeToggle extends Component {
     static contextType = ThemeContext
@@ -14,7 +13,7 @@ render() {
                 </div>
 
             
-            )
+            ) 
     }
 }
 

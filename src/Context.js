@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Booklist from "./components/Booklist";
-import Navbar from "./components/Navbar";
-import ThemeToggle from "./components/ThemeToggle";
+import Booklist from "./components/contextComponents/Booklist";
+import Navbar from "./components/contextComponents/Navbar";
+import ThemeToggle from "./components/contextComponents/ThemeToggle";
 import AuthContextProvider from "./contexts/AuthContext";
 import ThemeContextProvider from "./contexts/ThemeContext";
 
