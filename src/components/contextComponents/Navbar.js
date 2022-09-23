@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { AuthContext } from "../contexts/AuthContext";
-import { ThemeContext } from "../contexts/ThemeContext";
+import { AuthContext } from "../../contexts/AuthContext";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 // We wil use the theme.ContextConsumer to consume the context rather than calling static
 
