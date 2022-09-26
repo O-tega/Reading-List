@@ -15,8 +15,6 @@ const SongList =()=>{
         setShowForm(true)
     }
 
-
-    console.log(newSong)
     const handleSubmit = (e)=>{
         e.preventDefault()
         const count = songs.length
