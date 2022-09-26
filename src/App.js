@@ -5,6 +5,7 @@ import {Routes, Route} from 'react-router-dom'
 import Home from "./components/Home";
 import Context from "./Context"
 import Hooks from "./Hooks";
+import UseContext from './UseContext'
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
               <Routes>
                 <Route path='context' element={<Context/>} />
                 <Route path='hooks' element={<Hooks/>} />
+                <Route path='usecontext' element={<UseContext/>} />
               </Routes>
             
 				</div>
