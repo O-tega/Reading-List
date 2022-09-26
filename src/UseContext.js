@@ -9,16 +9,18 @@ import ThemeContextProvider from "./contexts/ThemeContext";
 class Context extends Component {
 	render() {
 		return (
-			<div>
-				<ThemeContextProvider>
-					<AuthContextProvider>
-						<Navbar />
-                        <BookContextProvider>
-						    <Booklist />
-                        </BookContextProvider>
-						<ThemeToggle />
-					</AuthContextProvider>
-        </ThemeContextProvider>
+			<div className='w-full flex flex-col items-center'>
+				<div className='w-full px-10'>
+					<ThemeContextProvider>
+						<AuthContextProvider>
+							<Navbar />
+							<BookContextProvider>
+								<Booklist />
+							</BookContextProvider>
+							<ThemeToggle />
+						</AuthContextProvider>
+					</ThemeContextProvider>
+				</div>
 			</div>
 		);
 	}

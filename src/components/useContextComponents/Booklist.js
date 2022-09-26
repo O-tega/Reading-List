@@ -9,7 +9,7 @@ const Booklist =()=>{
     const theme = isLightTheme ? light : dark
     return(
         <div style={{background: theme.bg, color: theme.syntax}} className='px-10'>
-                <ul className='text-center py-10 '>
+                <ul className='text-center font-medium py-10 '>
                     {books.map(({title, id})=>{
                         return(
                             <li key={id} className='title' style ={{background: theme.ui, color: theme.syntax}} >{title}</li>

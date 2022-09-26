@@ -6,7 +6,7 @@ const Hooks =()=>{
 
     return(
 
-        <div>
+        <div className="w-full flex flex-col">
             <SongList/>
         </div>
 

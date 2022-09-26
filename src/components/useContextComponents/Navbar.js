@@ -9,9 +9,9 @@ const Navbar =()=>{
     const {isAuthenticated, toggleAuth} = useContext(AuthContext);
     const theme = isLightTheme ? light : dark
     return(
-        <div style={{background: theme.ui, color: theme.syntax}} className='py-10 mt-10'>
+        <div style={{background: theme.ui, color: theme.syntax}} className='py-10 mt-10 rounded-tr-2xl'>
                             <div className='text-center font-bold text-2xl '>
-                                Context App
+                                useContext App
                             </div>
                             <div onClick={toggleAuth}>
                                 {isAuthenticated ? <div className="text-green-500 text-center">Logged in</div> : <div className="text-red-500 text-center">Logged out</div>}
