@@ -24,22 +24,22 @@ const SongList =()=>{
 
     const songList = songs.map(({title, id})=>{
         return (
-					<div key={id} className='flex flex-col items-center my-5'>
-						<ul>{title} {id}</ul>
+					<div key={id} className='w-10/12 flex flex-col items-center my-3 bg-slate-100 rounded-lg py-2 hover:bg-slate-200 '>
+						<ul><li className='font-bold text-slate-400'>{title} {id}</li></ul>
                     </div>
                        
 				);
     })
 
     return (
-            <div className='flex justify-center mt-10'>
-                <div>
+            <div className='w-full flex flex-col items-center mt-10'>
+                
                     {songList}
 
                     {showForm ? (
-                        <div className=' p-2'>
+                        <div className='p-2 ml-5 mt-10'>
                             <form onSubmit={handleSubmit}>
-                            <div className='flex'>
+                            <div className='flex justify-center'>
                                 <input
                                     onChange={(e)=>setNewSong(e.target.value)}
                                     type='text'
@@ -55,14 +55,13 @@ const SongList =()=>{
                         </div>
                     ) : null}
 
-                    <div className='flex justify-center absolute inset-x-0 bottom-10'>
+                    <div className='absolute flex justify-center ml-28 inset-x-0 bottom-36'>
                         <button
                             onClick={handleClick}
                             className='w-52 text-center rounded-lg text-slate-500 shadow-lg bg-slate-200 hover:bg-slate-400 transition hover:text-white  font-medium px-4 py-1 mr-5'>
                             Add Song
                         </button>
                     </div>
-                </div>
             </div>
 		);
 

@@ -16,7 +16,7 @@ class Navbar extends Component {
                     // using a tenary operator to check the condition of isLightTheme and action
                     const theme = isLightTheme ? light : dark
                     return(
-                        <div style={{background: theme.ui, color: theme.syntax}} className='py-10 mt-10'>
+                        <div style={{background: theme.ui, color: theme.syntax}} className='py-10 mt-10 rounded-tr-2xl'>
                             <div className='text-center font-bold text-2xl '>
                                 Context App
                             </div>
