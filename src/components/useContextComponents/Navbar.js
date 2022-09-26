@@ -1,22 +1,15 @@
-import React, { Component } from "react";
+import React, {  useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 // We wil use the theme.ContextConsumer to consume the context rather than calling static
 
-class Navbar extends Component {
-	state = {};
-
-	render() {
-        return (
-            <AuthContext.Consumer>{(authContext)=>(
-                <ThemeContext.Consumer>{(themeContext)=>{
-                    const {isAuthenticated, toggleAuth} = authContext
-                    const {isLightTheme, light, dark} = themeContext
-                    // using a tenary operator to check the condition of isLightTheme and action
-                    const theme = isLightTheme ? light : dark
-                    return(
-                        <div style={{background: theme.ui, color: theme.syntax}} className='py-10 mt-10'>
+const Navbar =()=>{
+    const {isLightTheme, light, dark} = useContext(ThemeContext);
+    const {isAuthenticated, toggleAuth} = useContext(AuthContext);
+    const theme = isLightTheme ? light : dark
+    return(
+        <div style={{background: theme.ui, color: theme.syntax}} className='py-10 mt-10'>
                             <div className='text-center font-bold text-2xl '>
                                 Context App
                             </div>
@@ -29,11 +22,7 @@ class Navbar extends Component {
                                 <li className='nav'>FAQ</li>
                             </nav>
                         </div>
-                    )
-                }}</ThemeContext.Consumer>
-            )}</AuthContext.Consumer>
-		);
-	}
+    )
 }
 
 export default Navbar;
