@@ -7,7 +7,7 @@ class ContextHooks extends Component{
     render(){
 
         return (
-					<div className='flex'>
+					<div className='flex w-full  bg-white h-screen rounded-t-3xl'>
 						<div className='py-5 px-5 mt-6 flex flex-col items-center'>
 							<Link to='context'>
 								<div className=' text-center rounded-lg text-slate-500 shadow-lg bg-slate-200 hover:bg-slate-400 transition hover:text-white  font-medium px-2 py-1'>

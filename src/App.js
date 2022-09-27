@@ -8,7 +8,7 @@ class App extends Component {
 		return (
 			<div className='flex flex-col h-screen items-center'>
 				<Home />
-				<div className='w-3/4 bg-white h-screen rounded-t-3xl '>
+				<div className='w-3/4 '>
 					<AppRoutes />
 				</div>
 			</div>
