@@ -14,7 +14,7 @@ const BookListRl = () => {
 				{books.length? books.map(
 					({ title, author, id }) => {
 						return (
-							<div>
+							<div key={id}>
                                 <BookDetail title={title} id={id} author={author}/>
                             </div>
 						);
@@ -25,6 +25,7 @@ const BookListRl = () => {
                 <p className="text-3xl font-bold">Hello free time 🕺💃</p>
         </div> }
 			</div>
+
 		</div>
 	)
 };

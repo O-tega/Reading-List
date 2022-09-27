@@ -1,4 +1,5 @@
 import React from 'react'
+import BookForm from './components/readingListComponent/BookForm';
 import BookListRl from './components/readingListComponent/BookListRl';
 import Navbar from './components/readingListComponent/Navbar';
 import BookContextProvider from './contexts/BookContextRl';
@@ -10,6 +11,7 @@ const ReadingList = ()=>{
 				<BookContextProvider>
 					<Navbar />
                     <BookListRl/>
+                    <BookForm />
 				</BookContextProvider>
 			</div>
 		);
