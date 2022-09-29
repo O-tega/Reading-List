@@ -28,36 +28,39 @@ const BookForm = () =>{
 				<div className='w-full flex flex-col items-center mt-10'>
 					{showForm ? (
 						<div className='p-2 ml-5 mt-10 absolute inset-x-0 bottom-24  '>
-                            <div className=''>
-                                <form
-                                    onSubmit={handleSubmit}>
-                                    <div className='flex justify-center'>
-                                        <input
-                                            onChange={(e) =>
-                                                setTitle(
-                                                    e.target.value
-                                                )
-                                            }
-                                            type='text'
-                                            placeholder='Book Title'
-                                            className='border border-slate-300 w-36 rounded-lg pl-3 mr-1'
-                                        />
-                                        <input
-                                            onChange={(e) =>
-                                                setAuthor(
-                                                    e.target.value
-                                                )
-                                            }
-                                            type='text'
-                                            placeholder='Book Author'
-                                            className='border border-slate-300 w-36 rounded-lg pl-3 mr-1'
-                                        />
-                                        <input
-                                        type='submit'
-                                            className={`${classname}`}/>
-                                    </div>
-                                        </form>
-                            </div>
+							<div className=''>
+								<form
+									onSubmit={
+										handleSubmit
+									}>
+									<div className='flex justify-center'>
+										<input
+											onChange={(e) =>
+												setTitle(
+													e.target.value
+												)
+											}
+											type='text'
+											placeholder='Book Title'
+											className='text-white w-36 bg-[#502850]  rounded-lg pl-3 mr-1'
+										/>
+										<input
+											onChange={(e) =>
+												setAuthor(
+													e.target.value
+												)
+											}
+											type='text'
+											placeholder='Book Author'
+											className='text-white bg-[#502850]  w-36 rounded-lg pl-3 mr-1'
+										/>
+										<input
+											type='submit'
+											className={`${classname}`}
+										/>
+									</div>
+								</form>
+							</div>
 						</div>
 					) : null}
 

@@ -5,10 +5,7 @@ export const BookContext = createContext();
 
 
 const BookContextProvider =(props)=>{
-    const [books, dispatch] = useReducer(bookReducer, [
-        {id: 1, title: 'Name of the wind', author: 'Patrick Rothfuss'},
-        {id: 2, title: 'The final empire', author: 'Brandon Sanderson'}
-    ])
+    const [books, dispatch] = useReducer(bookReducer, [])
 
 
     return(
