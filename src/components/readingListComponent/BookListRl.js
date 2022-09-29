@@ -10,7 +10,7 @@ const BookListRl = () => {
 	);
 	return (
 		<div className=' flex justify-center '>
-			<div className='w-8/12 bg-[#8f548f] h-96 flex flex-col justify-center px-10'>
+			<div className='w-8/12 bg-[#8f548f] h-96 flex flex-col pt-8 px-10'>
 				{books.length? books.map(
 					({ title, author, id }) => {
 						return (

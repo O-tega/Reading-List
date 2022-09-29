@@ -4,13 +4,12 @@ import { BookContext } from '../../contexts/BookContextRl';
 
 const BookDetail =({title, author, id})=>{
 
-    const{removeBook} = useContext(BookContext)
+    const{dispatch} = useContext(BookContext)
 
     return(
-        <div onClick={()=>removeBook(id)}
+        <div onClick={()=>dispatch({type: 'REMOVE_BOOK', id})}
             className=' text-center text-white text-sm rounded bg-[#6d3d6d] mb-5 p-3 hover:line-through cursor-pointer hover:opacity-80'>
             <p className="flex justify-between">
-                <span className="text-xs">{id}.</span>
                 <span className="font-medium">{title}</span>
                 <span>-</span>
                 <span className="text-xs">{author}</span>
