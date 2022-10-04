@@ -9,9 +9,11 @@ const BookContextProvider = (props)=>{
 			{ id: 2, title: "The way of kings" },
 			{ id: 3, title: "The final empire" },
 		]);
+         
+    // console.log(setBooks)
 
     return(
-        <BookContext.Provider value={{books}}>
+        <BookContext.Provider value={{books, setBooks}}>
             {props.children}
         </BookContext.Provider>
     )
